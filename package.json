@@ -1,0 +1,22 @@
+{
+  "name": "demo-kafka",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start:produce": "node producer/scoreProducer.js",
+    "start:realtime": "node consumer/realtimeScore.js",
+    "start:store-league-a": "node consumer/leagueADb.js",
+    "start:store-league-b": "node consumer/leagueBDb.js"
+  },
+  "type": "module",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "kafkajs": "^2.2.4",
+    "pg": "^8.11.2",
+    "pg-hstore": "^2.3.4",
+    "sequelize": "^6.32.1"
+  }
+}
